@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/n/dotnet/v5/v5.csproj",
-      "projectName": "v5",
-      "projectPath": "/home/n/dotnet/v5/v5.csproj",
+      "projectUniqueName": "/home/n/dotnet/v5/PruebaEjemplo.csproj",
+      "projectName": "PruebaEjemplo",
+      "projectPath": "/home/n/dotnet/v5/PruebaEjemplo.csproj",
       "packagesPath": "/home/n/.nuget/packages/",
       "outputPath": "/home/n/dotnet/v5/obj/",
       "projectStyle": "PackageReference",

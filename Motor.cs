@@ -1,19 +1,30 @@
-namespace v5
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace PruebaEjemplo
 {
-    public class Motor : VehiculoComponentes
+    enum TipoMotor
     {
-        enum TypeEngine
-        {
-            TWO_TIMES, FOUR_TIMES
-        }
-        TypeEngine _typeEngine;
-        string _id;
-        string _cc;
-        public Motor(string id, TypeEngine typeEngine, string cc) : base()
+        DOS_TIEMPOS, CUATRO_TIEMPOS
+    }
+
+    class Motor : VehiculoComponente
+    {
+        private readonly string _id;
+        private TipoMotor _tipoMotor;
+        private int _cilindrada;
+
+        public Motor(string id, TipoMotor tipoMotor, int cilindrada) : base()
         {
             _id = id;
-            _typeEngine = typeEngine;
-            _cc = cc;
+            _tipoMotor = tipoMotor;
+            _cilindrada = cilindrada;
         }
+
+        public string Id => _id;
+
+        public int Cilindrada { get => _cilindrada; set => _cilindrada = value; }
+        internal TipoMotor TipoMotor { get => _tipoMotor; set => _tipoMotor = value; }
     }
 }
