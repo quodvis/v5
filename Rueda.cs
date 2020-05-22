@@ -6,11 +6,11 @@ namespace v5
         {
             FENOL, HULE, POLIURETANO
         }
-        Recubrimiento _recubrimiento;
-        public Rueda(Recubrimiento recubrimiento)
+        Covering _recubrimiento;
+        public Rueda(Covering recubrimiento)
         {
             _recubrimiento = recubrimiento;
         }
-        
+
     }
 }
